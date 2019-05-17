@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/budget.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Budget Buster | Johnny Juarez</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- heading h1 -->
+      <h1 class="header">Budget Buster</h1>
+      <!-- initial amount -->
+      <p>Initial</p>
+      <input id="inputAmount" type="text" placeholder="$00.00" />
+      <!-- where deductions can be input -->
+      <div class="deduction">
+        <p>deductions <span class="newDeduct">X</span></p>
+        <ul>
+          <li>
+            <input class="num" type="text" placeholder="$00.00" />
+            <span>X</span>
+          </li>
+          <li>
+            <input class="num" type="text" placeholder="$00.00" /><span>X</span>
+          </li>
+          <li>
+            <input class="num" type="text" placeholder="$00.00" /><span>X</span>
+          </li>
+        </ul>
+        <!-- total -->
+        <button class="calculateBtn">Calculate</button>
+        <P>Total: <span class="total"></span></P>
+      </div>
+    </div>
+    <script src="assets/js/budget.js"></script>
+  </body>
+</html>
